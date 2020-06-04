@@ -1,2 +1,2 @@
 20182236 Hyejin Yoon
-Kookmin Univ. Math
+Kookmin Univ. Math and SW
