@@ -7,10 +7,13 @@ def application(environ, start_response) :
         b = d.get('b', [''])[0]
         sum = -1
         mul = -1
-        if '' not in [a, b]:
+        try:
                 a, b = int(a), int(b)
                 sum = (a+b)
                 mul = (a*b)
+        except ValueError:
+                sum = "valueError"
+                mul = "valueError"
         response_body = html % {
                 'sum' : sum,
                 'mul' : mul,
